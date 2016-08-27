@@ -23,17 +23,14 @@
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-Bd-dfF">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="122"/>
-                                        </variation>
                                     </progressView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-wW-qEp" userLabel="Top View">
                                         <rect key="frame" x="0.0" y="2" width="600" height="250"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xq-fD-qxw">
-                                                <rect key="frame" x="262" y="108" width="143" height="82"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xq-fD-qxw" userLabel="Timer Label">
+                                                <rect key="frame" x="232" y="95" width="136" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="kvj-de-KXM">
@@ -48,16 +45,16 @@
                                                             <constraint firstAttribute="width" constant="46" id="28s-bT-egi"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDm-Ia-hPk">
-                                                        <rect key="frame" x="312" y="0.0" width="242" height="250"/>
+                                                        <rect key="frame" x="312" y="0.0" width="243" height="250"/>
                                                     </pickerView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpJ-BV-V0F">
                                                         <rect key="frame" x="554" y="0.0" width="46" height="250"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -112,10 +109,9 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="0ow-Ja-fDk" secondAttribute="bottom" constant="10" id="6O3-Md-PcC"/>
-                                            <constraint firstAttribute="trailing" secondItem="0ow-Ja-fDk" secondAttribute="trailing" constant="172" id="6UQ-WA-NTG"/>
-                                            <constraint firstItem="0ow-Ja-fDk" firstAttribute="top" secondItem="nSl-dP-0Q2" secondAttribute="top" constant="11" id="7rx-r5-Wdx"/>
-                                            <constraint firstItem="0ow-Ja-fDk" firstAttribute="leading" secondItem="nSl-dP-0Q2" secondAttribute="leading" constant="173" id="FRx-Hf-HKX"/>
+                                            <constraint firstItem="0ow-Ja-fDk" firstAttribute="centerY" secondItem="nSl-dP-0Q2" secondAttribute="centerY" id="CAZ-ku-Gkd"/>
+                                            <constraint firstItem="0ow-Ja-fDk" firstAttribute="centerX" secondItem="nSl-dP-0Q2" secondAttribute="centerX" id="K7r-hy-m0s"/>
+                                            <constraint firstAttribute="height" constant="121" id="gNa-jT-lRY"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g18-8p-O5I" userLabel="Bottom View">
